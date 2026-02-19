@@ -1,137 +1,87 @@
-:root {
-  --negro: #111111;
-  --negro-suave: #1f1f1f;
-  --gris-oscuro: #2d2d2d;
-  --gris: #6b7280;
-  --borde: #e5e7eb;
-  --blanco: #ffffff;
-  --error: #000000;
-  --radio: 12px;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Fondo general */
 body {
-  background: #f4f4f5;
-  font-family: "Inter", Arial, sans-serif;
-  margin: 0;
-  color: var(--negro);
-
-  /* Centrado total */
-  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
+/* Contenedor principal */
 .app-container {
   width: 100%;
-  max-width: 700px;
-  padding: 1.5rem;
-}
-
-.app-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--negro);
-  margin-bottom: 0.3rem;
-}
-
-.subtitulo {
-  text-align: center;
-  font-size: 0.95rem;
-  color: var(--gris);
-  margin-bottom: 1.5rem;
-}
-
-.form-contacto {
-  background: var(--blanco);
-  padding: 1.5rem;
-  border: 1px solid var(--borde);
-  border-radius: var(--radio);
-  box-shadow: var(--shadow);
+  max-width: 600px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
 }
 
-label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--gris-oscuro);
+/* Título */
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
 }
 
+/* Subtítulo */
+.subtitulo {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Lista de contactos */
+.lista-contactos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Botones */
+button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+/* Inputs */
 input {
-  padding: 0.75rem;
-  border: 1px solid var(--borde);
-  border-radius: var(--radio);
-  font-size: 0.95rem;
-  transition: 0.2s;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 input:focus {
   outline: none;
-  border-color: var(--negro);
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
-}
-
-.btn-primario {
-  background: var(--negro);
-  color: var(--blanco);
-  padding: 0.8rem;
-  border: 0;
-  border-radius: var(--radio);
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.2s;
-}
-
-.btn-primario:hover {
-  background: var(--negro-suave);
-}
-
-.tarjeta-contacto {
-  background: var(--blanco);
-  border: 1px solid var(--borde);
-  border-radius: var(--radio);
-  padding: 1.2rem;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-  transition: 0.2s;
-}
-
-.tarjeta-contacto:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
-
-.tarjeta-contacto h3 {
-  margin: 0;
-  font-weight: 600;
-  color: var(--negro);
-}
-
-.acciones {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-}
-
-.btn-eliminar {
-  background: var(--negro);
-  color: var(--blanco);
-  padding: 0.5rem 0.9rem;
-  border: 0;
-  border-radius: var(--radio);
-  cursor: pointer;
-  font-size: 0.85rem;
-  transition: 0.2s;
-}
-
-.btn-eliminar:hover {
-  opacity: 0.8;
+  border: 2px solid #000000;
 }
