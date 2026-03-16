@@ -1,11 +1,11 @@
 {
   "contactos": [
     {
-      "nombre": "Yhojan  Caro",
-      "telefono": "3063952356",
-      "correo": "caroyhojan@gmail.com",
-      "etiqueta": "Nada por decir",
-      "id": "1"
+      "id": "74a0",
+      "nombre": "Yhojan ",
+      "telefono": "30540722356",
+      "correo": "Yhojan@gmail.com",
+      "etiqueta": "Ah si"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
