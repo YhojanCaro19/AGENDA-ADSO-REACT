@@ -156,7 +156,7 @@ function FormularioContacto({
         <input
           className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
           name="nombre"
-          placeholder="Ej: Camila Pérez"
+          placeholder="Ej: Angie Vasquez"
           value={form.nombre}
           onChange={onChange}
         />
@@ -188,7 +188,7 @@ function FormularioContacto({
         <input
           className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
           name="correo"
-          placeholder="Ej: camila@sena.edu.co"
+          placeholder="Ej: AngieVMA@sena.edu.co"
           value={form.correo}
           onChange={onChange}
         />
